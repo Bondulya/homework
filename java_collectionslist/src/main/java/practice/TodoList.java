@@ -2,8 +2,15 @@ package practice;
 
 import java.util.ArrayList;
 
+
 public class TodoList {
+
     ArrayList<String> todoList = new ArrayList<>();
+
+    public ArrayList<String> getTodoList() {
+        return todoList;
+    }
+
 
     public void add(String todo) {
         // TODO: добавьте переданное дело в конец списка
@@ -20,6 +27,7 @@ public class TodoList {
             // TODO: добавьте дело на указаный индекс,
             //  проверьте возможность добавления
         }
+        System.out.println("Добавлено дело - \"" + todo + "\"");
     }
 
 
